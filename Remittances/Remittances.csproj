@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2CA991BD-8D82-4A53-B6A8-91E4DA95B9FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Remittances</RootNamespace>
+    <AssemblyName>Remittances</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Add_Remit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Add_Remit.Designer.cs">
+      <DependentUpon>Add_Remit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DateTimeTesting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DateTimeTesting.Designer.cs">
+      <DependentUpon>DateTimeTesting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddAcc.Designer.cs">
+      <DependentUpon>frmAddAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddCountry.Designer.cs">
+      <DependentUpon>frmAddCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAddCurrency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAddCurrency.Designer.cs">
+      <DependentUpon>frmAddCurrency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCurrency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCurrency.Designer.cs">
+      <DependentUpon>frmCurrency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEntriesProg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEntriesProg.Designer.cs">
+      <DependentUpon>frmEntriesProg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMatches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMatches.Designer.cs">
+      <DependentUpon>frmMatches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FRM_AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FRM_AddCustomer.Designer.cs">
+      <DependentUpon>FRM_AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FRM_AddMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FRM_AddMatch.Designer.cs">
+      <DependentUpon>FRM_AddMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FRM_Add_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FRM_Add_User.Designer.cs">
+      <DependentUpon>FRM_Add_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FRM_Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FRM_Accounts.Designer.cs">
+      <DependentUpon>FRM_Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCountries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCountries.Designer.cs">
+      <DependentUpon>frmCountries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FRM_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FRM_Customers.Designer.cs">
+      <DependentUpon>FRM_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FRM_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FRM_Users.Designer.cs">
+      <DependentUpon>FRM_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountClass.cs" />
+    <Compile Include="Models\CountryClass.cs" />
+    <Compile Include="Models\currencyClass.cs" />
+    <Compile Include="Models\CustomerClass.cs" />
+    <Compile Include="Models\DataAccess.cs" />
+    <Compile Include="Models\EntryClass.cs" />
+    <Compile Include="Models\LoginClass.cs" />
+    <Compile Include="Models\commissaryClass.cs" />
+    <Compile Include="Models\MatchClass.cs" />
+    <Compile Include="Models\MovementClass.cs" />
+    <Compile Include="Models\RemitClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Add_Remit.resx">
+      <DependentUpon>Add_Remit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DateTimeTesting.resx">
+      <DependentUpon>DateTimeTesting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddAcc.resx">
+      <DependentUpon>frmAddAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddCountry.resx">
+      <DependentUpon>frmAddCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAddCurrency.resx">
+      <DependentUpon>frmAddCurrency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCurrency.resx">
+      <DependentUpon>frmCurrency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEntriesProg.resx">
+      <DependentUpon>frmEntriesProg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMatches.resx">
+      <DependentUpon>frmMatches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FRM_AddCustomer.resx">
+      <DependentUpon>FRM_AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FRM_AddMatch.resx">
+      <DependentUpon>FRM_AddMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FRM_Add_User.resx">
+      <DependentUpon>FRM_Add_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FRM_Accounts.resx">
+      <DependentUpon>FRM_Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCountries.resx">
+      <DependentUpon>frmCountries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FRM_Customers.resx">
+      <DependentUpon>FRM_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FRM_Users.resx">
+      <DependentUpon>FRM_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
